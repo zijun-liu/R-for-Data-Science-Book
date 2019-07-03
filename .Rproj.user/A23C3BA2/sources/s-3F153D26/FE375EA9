@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1562172506046.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1219700711",
+    "id" : "FE375EA9",
+    "lastKnownWriteTime" : 1562193336,
+    "last_content_update" : 1562193336766,
+    "path" : "~/Desktop/R for Data Science Book/3. Data trandformation with dplyr.R",
+    "project_path" : "3. Data trandformation with dplyr.R",
+    "properties" : {
+        "cursorPosition" : "47,0",
+        "scrollLine" : "20",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
