@@ -45,3 +45,36 @@ delays <- flights %>%
             ) %>% 
   filter(count > 20, dest != "HNL")
 
+not_cancelled
+
+batting <- as_tibble(Lahman::Batting)
+batters <- batting %>%
+  group_by(playerID) %>%
+  summarize(
+    ba = sum(H, na.rm = TRUE) /sum(AB, na.rm = TRUE),
+    ab = sum(AB, na.rm = TRUE)
+  )
+
+batters %>%
+  filter(ab>100) %>%
+  ggplot(mapping = aes(x = ab, y = ba)) +
+  geom_point()+
+  geom_smooth(se = FALSE)
+
+batters %>%
+  ggplot(mapping = aes(x = ab, y = ba)) +
+  geom_point()+
+  geom_smooth(se = FALSE)
+
+batters %>%
+  arrange(desc(ba))
+
+?summarize
+
+?x[1]
+
+not_cancelled
+
+flights %>%
+  group_by(carrier) %>%
+  count(flight)
